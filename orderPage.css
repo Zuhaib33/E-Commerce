@@ -3,7 +3,8 @@
     background-color:wheat ;    
 }
 .charges {
-    width: 100%;
+    width: 95%;
+    margin-left: 2%;
     display: flex;
     justify-content: space-between;
     background-color: rgb(240, 190, 133,0.9);
@@ -12,7 +13,8 @@
     /* height: 40px; */
 }
 .paid {
-    width: 100%;
+    width: 95%;
+    margin-left: 2%;
     display: flex;
     justify-content: space-between;
     background-color: rgb(240, 190, 133,0.9);
@@ -20,7 +22,8 @@
     margin-top: 20px;
 }
 .orderNumb{
-    width: 100%;
+    width: 95%;
+    margin-left: 2%;
     display: flex;
     justify-content: space-between;
     background-color: rgb(240, 190, 133,0.9);
