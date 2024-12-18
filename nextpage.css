@@ -1,0 +1,107 @@
+.page{
+    width: 100%;
+    display: flex;
+    background-color:wheat ;
+    display: none;
+   
+}
+.style{
+    width: 95%;
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-left: 2%;
+}
+.priceBox{
+    width: 100%;
+    display: inline-block;
+}
+/* this is for img card */
+.crad{ 
+background-color: rgb(240, 190, 133,0.9);
+display: flex;
+flex-direction: row;
+}
+.srcImg{
+   
+    margin-top: 5px;
+    border-radius: 5px;
+    margin-right: 5px;
+    width: 20%;
+
+
+}
+.headings{
+    display: inline-block;
+    padding-right: 10px;
+    width: 60%;
+    
+} 
+h2,h5{
+    margin: 10px;
+    overflow:visible;
+}
+.icon{
+    text-align: center;
+}
+.button{
+
+    background-color:wheat;
+    border-radius: 50%;
+}
+
+.button:active{
+    background-color: green;
+    color:white;
+}
+/* this id for price details */
+.details{
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    background-color:rgb(240, 190, 133,0.9)
+    
+}
+/* shipping */
+.shipping{
+    background-color:rgb(240, 190, 133,0.9)
+}
+/* price */
+.price{
+    background-color: rgb(240, 190, 133,0.9);
+    text-align: center;
+    margin-top: 20px;
+}
+.discount{
+    background-color: rgb(248, 104, 47) ;
+    height: 30px;
+    margin-top: 0px;
+    border-radius: 10px;
+
+}
+
+.placeOrder{
+    background-color:rgb(248, 104, 47);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-weight:600 ;
+}
+@media (min-width: 768px){
+    .crad{
+        height: 33vh;
+    }
+
+}
+@media (max-width: 400px){
+    .srcImg{
+        width:20%;
+        height: 200px;
+        margin-top: 8%;
+
+    }
+    #qrCode{
+        width:20%;
+        height: 200px;
+        margin-top: 8%;
+    }
+}

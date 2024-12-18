@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="nextpage.css" />
+    <link rel="stylesheet" href="orderPage.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <title>E-Commercec</title>
+  </head>
+  <body>
+    <div class="main" id="mainid">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img
+              src="./New folder/logo.png"
+              alt="Logo"
+              width="30"
+              class="d-inline-block align-text-top"
+            />
+            E-Commerce
+          </a>
+          <div class="d-flex">
+            <input
+              class="form-control me-2 sreachbar"
+              type="search"
+              placeholder="Search"
+            />
+            <button
+              class="btn btn-outline-success"
+              type="submit"
+              onclick="sreachBar()"
+            >
+              Search
+            </button>
+          </div>
+        </div>
+      </nav>
+
+      <!-- images -->
+      <div id="images">
+        <img src="./New folder/img1.jfif" alt="img" class="chgImg" />
+      </div>
+    </div>
+
+    <!-- this are cards of product -->
+    <div class="cradclass">
+      <div class="card">
+        <img src="./New folder/shose.png" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Running Shose</h5>
+          <h4 id="price">Rs:2500</h4>
+        <button href="#" class="btn btn-primary addToCrad" >Add to Crad</button>
+      </div>
+      <div class="card">
+        <img src="./New folder/shose1.png" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Sport shose</h5>
+        <h4 id="price">Rs:4000</h4>
+        <button href="#" class="btn btn-primary addToCrad">Add to Crad</button>
+      </div>
+      <div class="card">
+        <img src="./New folder/shose2.jfif" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Women shose</h5>
+          <h4 id="price">Rs:3500</h4>
+        <button href="#" class="btn btn-primary addToCrad">Add to Crad</button>
+      </div>
+      <div class="card">
+        <img src="./New folder/shose3.jfif" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Home shose</h5>
+        <h4 id="price">Rs:2500</h4>
+        <button href="#" class="btn btn-primary addToCrad">Add to Crad</button>
+      </div>
+      <div class="card">
+        <img src="./New folder/shose4.jfif" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Sport shose</h5>
+        <h4 id="price">Rs:3500</h4>
+        <button ton href="#" class="btn btn-primary addToCrad">
+          Add to Crad
+        </button>
+      </div>
+      <div class="card">
+        <img src="./New folder/earbud1.jfif" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Wired Earbuds</h5>
+          <h4 id="price">Rs:1400</h4>
+        <button href="#" class="btn btn-primary addToCrad">Add to Crad</button>
+      </div>
+      <div class="card">
+        <img src="./New folder/earbud2.jfif" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Earbuds</h5>
+          <h4 id="price">Rs:3000</h4>
+        <button href="#" class="btn btn-primary addToCrad">Add to Crad</button>
+      </div>
+      <div class="card">
+        <img src="./New folder/bat.jfif" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Cricket Bats</h5>
+        <h4 id="price">Rs:4500</h4>
+        <button href="#" class="btn btn-primary addToCrad">Add to Crad</button>
+      </div>
+      <div class="card">
+        <img src="./New folder/watch1.jfif" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Men's Watch</h5>
+        <h4 id="price">Rs:2300</h4>
+        <button href="#" class="btn btn-primary addToCrad">Add to Crad</button>
+      </div>
+      <div class="card">
+        <img src="./New folder/watch2.jfif" class="cardImg" alt="..." />
+
+        <h5 class="card-title">Gril's Watch</h5>
+        <h4 id="price">Rs:1300</h4>
+        <button href="#" class="btn btn-primary addToCrad">Add to Crad</button>
+      </div>
+    </div>
+
+    <!-- this code is for next page when we click on add to card -->
+
+    <div class="page">
+      <div class="priceBox">
+        <div class="crad style">
+          <img src="./New folder/bat.jfif" alt="bat" class="srcImg" />
+          <div class="headings">
+            <h2 id="name">bat</h2>
+            <p>
+              This product is highiy rated and most of people like it.It has
+              very fantastic look
+            </p>
+            <h2 id="amount">8000</h2>
+            <div class="icon">
+              <button id="munis" class="button">
+                <i class="fa-solid fa-circle-minus"></i>
+              </button>
+              <button id="p-nmbr" class="button">1</button>
+              <button id="add" class="button">
+                <i class="fa-solid fa-circle-plus"></i>
+              </button>
+            </div>
+          </div>
+
+          <img src="./New folder/OIP.jfif" alt="qr code" class="srcImg" id="qrCode" />
+        </div>
+        <div class="shipping style">
+          <h3 style="color: green">
+            Free Shipping Voucher Applied which Save Your Money
+          </h3>
+          <h2>Standard and To much Fast Delievery</h2>
+          <h3>You can get your product in 2 Days</h3>
+        </div>
+        <div class="details style">
+          <div>
+            <h3>Merchandise SubTatal</h3><br>
+            <h3>Shipping Fee SubTatal</h3><br>
+            <h3>Shipping Fee Voucher</h3><br>
+            <h3>Coins Save</h3><br>
+          </div>
+          <div>
+            <h2 id="mrcds">700</h2><br>
+            <h2 id="shpFee">700</h2><br>
+            <h2 id="shpVcher" style="color: red">-175</h2><br>
+            <h2 id="coinSave" style="color: red">12</h2><br>
+          </div>
+        </div>
+        <div class="price style">
+          <h3 class="discount">
+            Total Discount <b style="color: red">RS:175</b>
+          </h3>
+          <h2 id="total" style="color: green">Total:: RS:515</h2>
+          <h5>PLease read all details carefully</h5>
+          <button onclick="orderPagesDisplay()" class="placeOrder">
+            Place Order</button>
+        </div>
+      </div>
+    </div>
+  <!-- order page -->
+  <div class="orderPage">
+    <div class="bar">
+      <h1>Order Details</h1>
+    <i class="fa-solid fa-xmark " onclick=" cancleButton()"></i>
+    </div>
+    
+    <div class="charges">
+        <div>
+            <h3>Merchandise SubTatal</h3><br>
+            <h3>Shipping Fee SubTatal </h3><br>
+            <h3>Shipping Fee Voucher</h3><br>
+            <h3>Coins Save </h3><br>
+            <h2>Total</h2><br>
+        </div>
+    
+        <div>
+            <h3 id="mrchOerger">RS:700</h3><br>
+            <h3 id="shpOrder">RS:700</h3><br>
+            <h3 id="shpFeeOrder" style="color: red">-RS:175</h3><br>
+            <h3 id="coinOrder"  style="color: red">rs:45</h3><br>
+            <h3 id="totalOrder"  style="color: green">456</h3><br>
+        </div>
+    </div>
+        <div class="paid">
+            <h2>Paid By</h2><br>
+            <h3>Credit/Debit Card</h3><br>
+        </div>
+        <div class="orderNumb">
+            <div>
+                <h2> Order No. </h2><br>
+                <h3>Placed On</h3><br>
+                <h3>Paid on</h3><br>
+                <h3>Paid by</h3><br>
+
+            </div>
+            <div >
+                <h2 class="orderNum">1234567890</h2><br>
+                <h3 class="date">20 nv 2020</h3><br>
+                <h3 class="paidDate">20 nv 2020</h3><br>
+                <h3>Credit/Debit Card</h3><br>
+              </div>
+            </div>
+              <div>
+                <h2>Enter something about Product</h2>
+                <textarea name="details" id="textarea"></textarea>
+              </div>
+              
+</div>
+    <script src="app.js"></script>
+  </body>
+</html>
